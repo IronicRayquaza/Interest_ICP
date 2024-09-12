@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "hello18_backend": {
+      "main": "src/hello18_backend/main.mo",
+      "type": "motoko"
+    },
+    "hello18_frontend": {
+      "dependencies": [
+        "hello18_backend"
+      ],
+      "source": [
+        "src/hello18_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "hello18_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
